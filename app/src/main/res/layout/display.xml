@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_trueposture">
+    tools:context="abadwork.trueposture.graphToday"
+
+    <Space
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:id="@+id/space"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize= "23sp"
+        android:text="Welcome, Benjamin Bocanegra!"
+        android:id="@+id/textView"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/space"
+        android:layout_toRightOf="@+id/space"
+        android:layout_toEndOf="@+id/space" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="  Today&apos;s Posture Reading "
+        android:id="@+id/textViewC"
+        android:textColor="#FFFF00"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="190dip"
+        android:id="@+id/graph"
+        android:layout_above="@+id/textViewC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

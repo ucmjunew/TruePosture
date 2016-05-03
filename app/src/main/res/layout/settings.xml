@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mesa.trueposture.StarterPage"
+    android:background="@drawable/main_background_trueposture">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification                "
+        android:id="@+id/switchNotification"
+        android:checked="true"
+        android:layout_marginTop="40dp"
+        android:textSize="35dp"
+        android:switchMinWidth="45dp"
+        android:layout_below="@+id/bBackButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Account"
+        android:id="@+id/bRemove"
+        android:onClick="onButtonClick"
+        android:background="#82f51549"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/bSignOut"
+        android:onClick="onSignOutClick"
+        android:layout_gravity="center_vertical"
+        android:background="#add8e6"
+        android:layout_above="@+id/bRemove" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Password"
+        android:id="@+id/bUpdate"
+        android:background="#87c5e1"
+        android:onClick="onUpdateClick"
+        android:nestedScrollingEnabled="false"
+        android:layout_above="@+id/bSignOut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchNotification"
+        android:layout_alignRight="@+id/bUpdate"
+        android:layout_alignEnd="@+id/bUpdate"
+        android:id="@+id/rgInterval"
+        android:onClick="onRGclick">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify1"
+        android:text="         1 minute"
+        android:onClick="onIntervalClick"
+        android:textSize="25sp"
+        android:checked="true"
+        android:layout_below="@+id/switchNotification"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify2"
+        android:text="       3 minutes"
+        android:onClick="onIntervalClick"
+        android:textSize="25sp"
+        android:checked="false"
+        android:layout_below="@+id/notify1"
+        android:layout_alignRight="@+id/rgInterval"
+        android:layout_alignEnd="@+id/rgInterval" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify3"
+        android:text="       5 minutes"
+        android:onClick="onIntervalClick"
+        android:textSize="25sp"
+        android:layout_below="@+id/notify2"
+        android:layout_alignRight="@+id/rgInterval"
+        android:layout_alignEnd="@+id/rgInterval" />
+</RelativeLayout>

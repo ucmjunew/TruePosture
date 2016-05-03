@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="abadwork.trueposture.MainPage"
+    tools:showIn="@layout/activity_main_page">
+
+
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:text=""
+        android:background="@drawable/compare_icon"
+        android:id="@+id/gCompare"
+        android:clickable="true"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <Button
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:text=""
+        android:background="@drawable/settings_icon"
+        android:id="@+id/bSettings"
+        android:clickable="false"
+        android:layout_alignTop="@+id/gCompare"
+        android:layout_alignRight="@+id/graph"
+        android:layout_alignEnd="@+id/graph"
+        android:layout_marginRight="35dp"/>
+
+    <ToggleButton
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:text="New ToggleButton"
+        android:textOff=""
+        android:textOn=""
+        android:id="@+id/recordB"
+        android:checked="false"
+        android:background="@drawable/my_btn_toggle"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:layout_below="@+id/gCompare"
+        android:layout_alignLeft="@+id/gCompare"
+        android:layout_alignStart="@+id/gCompare" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="250dip"
+        android:id="@+id/graph"
+        android:layout_below="@+id/greeting"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome!"
+        android:id="@+id/greeting"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Latest Posture Track"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/graph"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

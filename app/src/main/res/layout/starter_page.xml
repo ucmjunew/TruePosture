@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mesa.trueposture.StarterPage">
+
+    <Space
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/loading_screen"
+        android:id="@+id/BackImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#87c5e1"
+        android:layout_alignParentTop="true"
+        android:contentDescription=""
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="True Posture"
+        android:id="@+id/TVTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="57sp"
+        android:layout_below="@+id/space2"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/bLogin"
+        android:onClick="onButtonClick"
+        android:layout_alignParentStart="true"
+        android:background="#87c5e1"
+        android:layout_below="@+id/TFpassword"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/bSignUp"
+        android:onClick="onButtonClick"
+        android:background="#5d7e9b"
+        android:layout_below="@+id/bLogin"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TFusername"
+        android:textColorHighlight="@color/blue"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Password :"
+        android:textColor="@color/white"
+        android:id="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TFusername"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/TFpassword"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/blue"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Username : "
+        android:textColor="@color/white"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/space3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:layout_below="@+id/TVTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space3" />
+
+
+</RelativeLayout>
